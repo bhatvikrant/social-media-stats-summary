@@ -17,7 +17,7 @@ const InstagramCard = (props) => {
                 {props.YTchannel &&
                     <ListGroup>
                         <ListGroup.Item>
-                            <b>Channel Name:</b> {props.YTchannel}
+                            <b>Channel ID:</b> {props.YTchannel}
                         </ListGroup.Item>
                         <ListGroup.Item>
                             <b>Total Views:</b> {props.YTtotalViews}
