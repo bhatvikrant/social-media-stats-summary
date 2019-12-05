@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, ListGroup} from 'react-bootstrap';
+import { Card, ListGroup } from 'react-bootstrap';
 import YoutubeUserForm from '../SocialMediaForms/YoutubeUserForm';
 import '../../styles/cards.css';
 import YTlogo from '../../assets/images/YTlogo.jpg';
@@ -16,6 +16,9 @@ const InstagramCard = (props) => {
                 <YoutubeUserForm getYoutubeChannel={props.getYoutubeChannel} />
                 {props.YTchannel &&
                     <ListGroup>
+                        <ListGroup.Item>
+                            <b>Channel Name:</b> {props.YTchannel}
+                        </ListGroup.Item>
                         <ListGroup.Item>
                             <b>Total Views:</b> {props.YTtotalViews}
                         </ListGroup.Item>
